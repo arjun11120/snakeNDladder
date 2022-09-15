@@ -1,28 +1,26 @@
-var elDiceOne       = document.getElementById('dice1');
-var elDiceTwo       = document.getElementById('dice2');
-var elComeOut       = document.getElementById('roll');
+let dice = document.getElementById('dice');
+var outputDiv = document.getElementById('diceResult');
 
-elComeOut.onclick   = function () {rollDice();};
 
 function rollDice() {
+    let result = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+    dice.dataset.side = result;
+    dice.classList.toggle("reRoll");
+    console.log(result);
+	alert(result);
+	var re = (result*10)+4;
+	var left = re+'%'; 
 
-  var diceOne   = Math.floor((Math.random() * 6) + 1);
-  var diceTwo   = Math.floor((Math.random() * 6) + 1);
- 
-  console.log(diceOne + ' ' + diceTwo);
-
-  for (var i = 1; i <= 6; i++) {
-    elDiceOne.classList.remove('show-' + i);
-    if (diceOne === i) {
-      elDiceOne.classList.add('show-' + i);
-    }
-  }
-
-  for (var k = 1; k <= 6; k++) {
-    elDiceTwo.classList.remove('show-' + k);
-    if (diceTwo === k) {
-      elDiceTwo.classList.add('show-' + k);
-    }
-  } 
-  setTimeout(rollDice(), 1000);
+    $("#r-dot").animate({left:left});
 }
+dice.addEventListener("click", rollDice);
+//var left = (4*10)+4;
+
+
+
+//$(document).ready(function(){
+//var left = '50%'; 
+ // $("#dice1").click(function(){
+   // $("#r-dot").animate({left:left});
+  //});
+//});
