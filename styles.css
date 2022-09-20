@@ -20,13 +20,23 @@ background-size:cover;
     width: 85%;
 }
 .cnt{
-	    width: 100%;
+	width: 100%;
     margin-bottom: 20px;
     margin-left: 20px;
     background-image: url(images/ladderpic-3.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
+}
+.end{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background-image: url(images/gameover.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+	
 }
 .container{
     position: absolute;
@@ -207,7 +217,7 @@ button:hover, button:active {
 }
 .colm{
 margin-left: 10px;
-        margin-top: 10px;
+        margin-top: 5px;
     width: 10%;
     height: 54px;
 
@@ -215,9 +225,17 @@ margin-left: 10px;
 .game{
 	position:relative;
 }
-.bg{
+.bg1{
 background-image:url('images/frog-1.png');
 background-size:cover;
+transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
+}
+.bg2{
+background-image:url('images/frog-3.png');
+background-size:cover;
+transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
 }
 .box1{
     text-align: center;
@@ -239,4 +257,13 @@ background-size:cover;
     opacity: 1;
     bottom: 20px;
   }
+}
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+.bg1,.bg2 {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
 }
