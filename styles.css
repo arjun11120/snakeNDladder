@@ -20,7 +20,7 @@ background-size:cover;
     width: 85%;
 }
 .cnt{
-	width: 100%;
+	width: 50%;
     margin-bottom: 20px;
     margin-left: 20px;
     background-image: url(images/ladderpic-3.png);
@@ -38,7 +38,7 @@ background-size:cover;
     position: relative;
 	
 }
-.container{
+.cont{
     position: absolute;
     top: 320px;
     right: 154px;
@@ -216,14 +216,15 @@ button:hover, button:active {
     position: absolute; 	
 }
 .colm{
-margin-left: 10px;
-        margin-top: 5px;
-    width: 10%;
-    height: 54px;
+    margin-left: 8px;
+    margin-top: 10px;
+    width: 8%;
+    height: 48px;
 
 }
 .game{
 	position:relative;
+  width: 30%;
 }
 .bg1{
 background-image:url('images/frog-1.png');
@@ -239,13 +240,26 @@ transform-origin: 50% 50%;
 }
 .box1{
     text-align: center;
+    margin: 10px 0px;
 }
 .table{
-    width: 93%;
         margin: 0px 15px;
 }
 .rw{
 	display:flex;
+}
+.fontp{
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+  font-family: cursive;
+}
+.dotg{
+  border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: red;
+    border: 3px solid white;
 }
 @keyframes fadeUp {
   0% {

@@ -4,25 +4,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Let's Roll</title>
     <link rel="stylesheet" href="./styles.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="main-body" style="display: flex;">
+    <div class="main-body d-flex">
 	<div class="lft">
 		<div class="box1">
-			<div class=p1">
-				<span>Player 1</span>
-				<div id="dotg" class="dotg">
+			<div class="d-flex">
+				<div class="p1 fontp">
+					<span>Player 1</span>
+				</div>
+				<div class="dotg">
 				</div>
 			</div>
-			<div class=p2">
-				<span>Player 2</span>
+			<div class="d-flex">
+				<div class="p2 fontp">
+					<span>Player 2</span>
+				</div>
+				<div class="dotg">
+				</div>
 			</div>
-			<div class=p3">
+			<div class="p3">
 				<button id="dice1" class="st-bt">Start Game</button>
 			</div>
-			<div class=p4">
+			<div class="p4">
 				<button class="sp-bt">Stop Game</button>
 			</div>
 		</div>
@@ -155,7 +162,7 @@
 	</div>
 	<div class="game">
 	<img src="images/mkboard.png" alt="">
-    <div class="container">
+    <div class="cont">
       <div id="dice" data-side="1">
     <div class="sides side-1">
         <span class="dot dot-1"></span>
