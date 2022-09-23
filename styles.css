@@ -318,17 +318,21 @@ body{
 .p4{
   display: none;
 }
-.table {
-  margin: 0px 12px;
-}
 .colm {
-  margin-left: -2px;
-  margin-top: 4px;
-  width: 10%;
-  height: 38px;
+  width: 25px;
+    height: 25px;
+    margin: 0;
 }
 .messageBox{
   display: none;
+}
+.table{
+  margin: 0px 8px;
+}
+.rw{
+  justify-content: space-between;
+  width: 93%;
+  height: 10%;
 }
 }
 /*
