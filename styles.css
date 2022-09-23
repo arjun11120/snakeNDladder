@@ -217,7 +217,7 @@ button:hover, button:active {
 }
 .colm{
     margin-left: 8px;
-    margin-top: 10px;
+    margin-top: 8px;
     width: 8%;
     height: 48px;
 
@@ -239,8 +239,8 @@ transform-origin: 50% 50%;
   animation: jump .5s linear alternate infinite;
 }
 .box1{
-    text-align: center;
-    margin: 10px 0px;
+  margin-top: 50px;
+  margin-left: 25%;
 }
 .table{
         margin: 0px 15px;
@@ -255,12 +255,83 @@ transform-origin: 50% 50%;
   font-family: cursive;
 }
 .dotg{
+  padding: 10px;
+  margin: 7px;
   border-radius: 50%;
     height: 20px;
     width: 20px;
     background: red;
     border: 3px solid white;
 }
+.bgreen{
+  background: green !important;
+}
+.bred{
+  background: red;
+}
+.redmes {
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: red;
+}
+
+.greenmes{
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: green;
+}
+.p1 img,.p2 img{
+  width: 40px;
+  vertical-align: text-top;
+}
+@media (max-width: 480px){
+.bt1{
+padding: 0px 19px;
+font-size: 12px;
+margin-top: 5px;
+}
+.fontp {
+  margin: 10px;
+  font-size: 10px;
+}
+.cnt {
+   width: 90%;
+}
+body{
+  height: 100% !important;
+  background-repeat: inherit;
+}
+.box1{
+  margin-top: 0;
+}
+.cnt {
+    width: 76%;
+    height: 28%;
+}
+.cont {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.p4{
+  display: none;
+}
+.table {
+  margin: 0px 12px;
+}
+.colm {
+  margin-left: -2px;
+  margin-top: 4px;
+  width: 10%;
+  height: 38px;
+}
+.messageBox{
+  display: none;
+}
+}
+/*
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -280,4 +351,11 @@ transform-origin: 50% 50%;
 .bg1,.bg2 {
   transform-origin: 50% 50%;
   animation: jump .5s linear alternate infinite;
+}
+*/
+.cel{
+  font-size: 20px;
+  font-weight: 800;
+  font-family: cursive;
+  color: #572615;
 }

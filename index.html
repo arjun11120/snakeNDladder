@@ -9,28 +9,33 @@
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <div class="main-body d-flex">
+    <div class="main-body d-md-flex d-sm-block">
 	<div class="lft">
-		<div class="box1">
+		<div class="box1 d-flex d-md-block mt-sm-0">
 			<div class="d-flex">
 				<div class="p1 fontp">
 					<span>Player 1</span>
+					<img src="images/frog-1.png" alt="">
 				</div>
-				<div class="dotg">
+				<div class="dotg" id="pl1">
 				</div>
 			</div>
 			<div class="d-flex">
 				<div class="p2 fontp">
 					<span>Player 2</span>
+					<img src="images/frog-3.png" alt="">
 				</div>
-				<div class="dotg">
+				<div class="dotg" id="pl2">
 				</div>
 			</div>
 			<div class="p3">
-				<button id="dice1" class="st-bt">Start Game</button>
+				<button id="dice1" class="st-bt bt1" onclick="refresh()">Restart Game</button>
 			</div>
 			<div class="p4">
-				<button class="sp-bt">Stop Game</button>
+				<button class="sp-bt bt1">Stop Game</button>
+			</div>
+			<div class="messageBox">
+				
 			</div>
 		</div>
 	</div>
