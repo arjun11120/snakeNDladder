@@ -216,11 +216,8 @@ button:hover, button:active {
     position: absolute; 	
 }
 .colm{
-    margin-left: 8px;
-    margin-top: 8px;
-    width: 8%;
-    height: 48px;
-
+  width: 7%;
+  height: 28px;
 }
 .game{
 	position:relative;
@@ -243,10 +240,14 @@ transform-origin: 50% 50%;
   margin-left: 25%;
 }
 .table{
-        margin: 0px 15px;
+  margin: 9px;
+  margin-left: 20px;
 }
 .rw{
 	display:flex;
+      justify-content: space-between;
+    width: 93%;
+    height: 10%;
 }
 .fontp{
   font-size: 20px;
@@ -335,7 +336,6 @@ body{
   height: 10%;
 }
 }
-/*
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -356,7 +356,6 @@ body{
   transform-origin: 50% 50%;
   animation: jump .5s linear alternate infinite;
 }
-*/
 .cel{
   font-size: 20px;
   font-weight: 800;

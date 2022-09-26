@@ -19,7 +19,7 @@ function rollDice() {
 	}
 	else{
 		player2();
-		console.log("player 2 click",click);
+		//console.log("player 2 click",click);
 		$("#pl1").removeClass("bgreen");
 		$("#pl2").addClass("bgreen");
 	}
